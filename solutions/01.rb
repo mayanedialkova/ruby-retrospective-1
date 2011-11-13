@@ -22,5 +22,3 @@ class Array
     occurences
   end
 end
-
-p [[:one, 1], [:two, 2]].to_hash
