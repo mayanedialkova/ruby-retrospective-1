@@ -6,13 +6,13 @@ class Array
  
   def index_by
     indexed = {}
-    self.each {|x| indexed[yield(x)] = x} #?? #ima li nujda ot self.each {...} ??
+    self.each {|x| indexed[yield(x)] = x} #ima li nujda ot self.each {...} ?
     indexed
   end
   
   def subarray_count(subarray)
     count = 0
-    self.each_cons(subarray.length) {|x| count +=1 if x == subarray}
+    self.each_cons(subarray.length) {|x| count += 1 if x == subarray}
     count
   end    
       
